@@ -9,27 +9,29 @@ export const CarSearch = () => {
     const handleSearchTermChange = (event:ChangeEvent<HTMLInputElement>) => {
         dispatch(changeSearchTerm(event.target.value))
     };
-    return <nav className="level">
-        <div className="level-left">
-            <div className="level-item">
-                <h3 className="title">My Cars</h3>
+    return <section className="section">
+        <nav className="level">
+            <div className="level-left">
+                <div className="level-item">
+                    <div className="title">My Cars</div>
+                </div>
             </div>
-        </div>
-        <div className="level-right">
-            <div className="level-item">
-                <div className="field is-horizontal is-flex-direction-row is-align-items-center">
-                    <div className="field-label">
-                        <label className="label">Search</label>
-                    </div>
-                    <div className="field-body">
-                        <div className="field is-expanded">
-                            <div className="control">
-                                <input className="input" type="text" value={searchValue} onChange={handleSearchTermChange} />
+            <div className="level-right">
+                <div className="level-item">
+                    <div className="field is-horizontal is-flex-direction-row is-align-items-center">
+                        <div className="field-label">
+                            <label className="label">Search</label>
+                        </div>
+                        <div className="field-body">
+                            <div className="field is-expanded">
+                                <div className="control">
+                                    <input className="input" type="text" value={searchValue} onChange={handleSearchTermChange} />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>;
+        </nav>
+    </section>;
 };

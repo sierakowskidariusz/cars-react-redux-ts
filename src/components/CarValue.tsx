@@ -7,7 +7,7 @@ export const CarValue = () => {
             .filter(car => car.name.toLowerCase().includes(state.cars.searchTerm.toLowerCase()))
             .reduce((sum: number, item: Car) => sum + item.cost, 0)
     );
-    return <section className="section is-flex is-justify-content-flex-end">
-        <span className="title is-size-4">Total Cost: ${totalCost}</span>
+    return <section className="section has-text-right">
+        <div className="title is-4">Total Cost: ${totalCost}</div>
     </section>;
 };

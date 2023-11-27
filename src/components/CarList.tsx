@@ -14,7 +14,7 @@ export const CarList = () => {
         id && dispatch(removeCar(id));
     }
 
-    return <section>
+    return <section className="section">
         {appState.cars.map(car => {
             const className: string = appState.filter && car.name.toLowerCase().includes(appState.filter.toLowerCase())
                 ? "has-text-weight-bold"

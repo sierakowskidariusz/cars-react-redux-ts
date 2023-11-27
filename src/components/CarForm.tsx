@@ -24,7 +24,7 @@ export const CarForm = () => {
         }
     };
     return <section className="section">
-        <h3 className="title is-3">Add Car</h3>
+        <div className="title is-3">Add Car</div>
         <form className="columns is-vcentered">
             <div className="column field">
                 <label className="label">Name</label>
