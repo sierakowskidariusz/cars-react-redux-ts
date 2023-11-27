@@ -4,8 +4,9 @@ import {removeCar} from "../store";
 
 export const CarList = () => {
     const appState = useAppSelector(state => {
+        const searchTerm = state.cars.searchTerm.toLowerCase();
         return {
-            cars: state.cars.data.filter(car => car.name.toLowerCase().includes(state.cars.searchTerm.toLowerCase())),
+            cars: state.cars.data.filter(car => car.name.toLowerCase().includes(searchTerm)),
             filter: state.form.name
         }
     });
