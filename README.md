@@ -1,3 +1,8 @@
+# Program idea
+The idea for the program was taken from the exercises available in the webinar
+[Modern React with Redux [2023 Update]](https://www.udemy.com/course/react-redux/) by [Stephen Grider](https://www.udemy.com/user/sgslo/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
